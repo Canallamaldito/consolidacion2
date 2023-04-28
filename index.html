@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/ico.png" type="image/x-icon">
+    <style>
+      /* Estilo para el contenedor de la tabla con scroll */
+      .tabla-container {
+        max-height: 470px;
+        /* Altura máxima del contenedor */
+        overflow-y: auto;
+        /* Habilitar scroll vertical */
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar bg-dark justify-content-center" data-bs-theme="dark"> 
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid justify-content-center"> 
+            <img src="./assets/img/logo.png" alt="Bootstrap" width="150px">
+            <a class="navbar-brand" href="#">            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!--redireccion a link codigo fuente-->
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/Canallamaldito/consolidacion2.git">  [Link Codigo Fuente]  </a>
+                </li>
+                <!--redireccion a link pagina fuente-->
+                <li class="nav-item">
+                  <a class="nav-link" href="https://digimon-api.vercel.app/">  [Link API  ]  </a>
+                </li>
+              </ul>
+              <!--search-->
+              <form class="d-flex" id="busqueda">
+                <input class="form-control me-2" type="search" placeholder="Nombre Digimon" aria-label="Search" id="Search">
+                <button class="btn btn-outline-success" type="button" id="search-button">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </nav>
+      <br>
+    </header>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="tabla-container">
+                <table class="table table-success table-hover" id="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Nivel</th>
+                      <th scope="col">Image</th>
+                    </tr>
+                  </thead>
+                  <tbody id="contenido">
+                    <!--en javascript-->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div id="contenido1">
+                <!-- en el archivo script.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header> 
+    <br> 
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <!--espacio para link-->
+          </div>
+          <div class="col-md-4">
+            <h5>Enlaces</h5>
+            <ul class="list-unstyled">
+              <li><a href="https://tu-digimon.fandom.com/es/wiki/Digimon_Adventure">Digimon Adventure 1</a></li>
+              <li><a href="https://tu-digimon.fandom.com/es/wiki/Digimon_Adventure_02">Digimon Adventure 2</a></li>
+              <li><a href="https://digimon.fandom.com/es/wiki/Digimon_Tamers#Saga_de_Hypnos">Digimon Tamers</a></li>
+              <li><a href="https://digimon.fandom.com/es/wiki/Digimon_Frontier">Digimon Frontier</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Síguenos en redes sociales</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://www.facebook.com/digifans.chile/?locale=es_LA"><i class="fab fa-facebook"></i> Facebook</a></li>
+              <li class="list-inline-item"><a href="https://twitter.com/digimon01?lang=es"><i class="fab fa-twitter"></i> Twitter</a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com/digimonoficial/?hl=es"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-secondary text-center py-3">
+        <div class="container">
+          <p class="mb-0">&copy; 2023 Todos los derechos reservados | Página no oficial de Digimon</p>
+        </div>
+      </div>
+    </footer>
+    
+      
+        <!-- JavaScript -->
+        <script src="./assets/js/logica.js"></script>
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <!--Bootstrap 5.3.0-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
