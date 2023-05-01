@@ -70,27 +70,16 @@ table.addEventListener("mouseout", function (event) {
 </div>  
 `;
 });
-// bus
-// Obtener el elemento del formulario por su ID
-//var form = document.getElementById("busqueda");
-
-// Agregar un evento de escucha para el botón de búsqueda
-//form.addEventListener("submit", function(event) {
-//  event.preventDefault(); // Evitar que el formulario se envíe
-
-  // Obtener el valor ingresado en el campo de búsqueda
- // var input = document.getElementById("Search");
- // var searchValue = input.value;
-
-  // Hacer algo con el valor de búsqueda
- // console.log("Valor de búsqueda:", searchValue);
-//});
+//
 //busqueda
-$("#busqueda").on("keyup", function (value) {
-  var value = $(this).val().toLowerCase();
-  console.log("Valor de búsqueda:", value);
-  $("body").filter(function () {
-    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+$("#buscar input").on("keyup", function() {
+  var input = $(this).val().toLowerCase();
+  $("#table tbody tr").each(function() {
+    var row = $(this);
+    if (row.text().toLowerCase().indexOf(input) !== -1) {
+      row.show();
+    } else {
+      row.hide();
+    }
   });
-
 });
