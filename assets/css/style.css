@@ -5,12 +5,10 @@
 }
 body {
     background-color: #212529;
-  }
+}
  /* imagen de agua */
 body {
       background-image: url(../img/agua.png);
       background-repeat: repeat;
       opacity: 0.9; /* Cambia el valor para ajustar la opacidad */
-    }
-    
-    
+}
